@@ -5,7 +5,7 @@ const NameList = () => {
     const [names, setNames] = useState([]);
 
     useEffect(() => {
-        axios.get("/names").then(response => {
+        axios.get("api/names").then(response => {
             setNames(response.data);
         });
     }, []);
